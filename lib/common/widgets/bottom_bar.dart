@@ -2,7 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/global_variables.dart';
-import '../../home/screens/home_screen.dart';
+import '../../features/home/screens/home_screen.dart';
 
 class BottomBar extends StatefulWidget {
   static const String routeName = '/actual-home';
