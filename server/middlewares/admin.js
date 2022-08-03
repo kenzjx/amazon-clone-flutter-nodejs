@@ -17,7 +17,7 @@ const admin = async (req, res, next) => {
 
         const user = await User.findById(verified.id);
         if (user.type == 'user' || user.type == 'seller') {
-            return res.status(401).json({msg: 'You are not an admin'});
+            return res.status(401).json({ msg: 'You are not an admin' });
 
         }
 
@@ -28,5 +28,9 @@ const admin = async (req, res, next) => {
         res.status(500).json({ error: err.message });
     }
 }
+
+// Get aal your products
+// /admin/get-products
+
 
 module.exports = admin;

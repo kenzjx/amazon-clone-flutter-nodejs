@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomTextFiled extends StatelessWidget {
+class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
   final int maxLines;
-  const CustomTextFiled(
+  const CustomTextField(
       {Key? key,
       required this.controller,
       required this.hintText,
