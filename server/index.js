@@ -6,6 +6,7 @@ const authRouter = require('./routes/auth');
 const { connection } = require("mongoose");
 const { options } = require('./routes/auth');
 const adminRouter = require('./routes/admin');
+const productRoute = require('./routes/product');
 // Init
 const PORT = 3000;
 const app = express();
@@ -15,6 +16,7 @@ const DB = 'mongodb://admin:admin@localhost';
 app.use(express.json());
 app.use(authRouter);
 app.use(adminRouter);
+app.use(productRoute);
 
 // Connections mongoose
 
